@@ -1,2 +1,2 @@
-# Pico8
-Music development in Pico-8
+# Pico-8
+Game development in Pico-8
