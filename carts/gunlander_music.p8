@@ -1,7 +1,80 @@
 pico-8 cartridge // http://www.pico-8.com
 version 32
 __lua__
+--music selection
+track=0
+name="none"
+mode=0
+loop=0
 
+function selecttrack()
+ if btn(0) then
+  track=0
+  mode=0
+  music(track)
+ elseif btn(1) then
+  track=16
+  mode=0
+  music(track)
+ elseif btn(5) then
+  music(63) --empty pattern to stop
+  mode=0
+--[[ elseif btn(2) then
+  mode=1]]
+ end
+end
+
+function detecttrack()
+ if stat(24)==-1 then
+  name="none"
+ elseif stat(24)>-1 and stat(24)<16 then
+  name="silly techno"
+ elseif stat(24)>15 and stat(24)<24 then
+  name="credits theme"
+ end
+end
+
+--[[function testmode()
+ if mode==1 then
+  if stat(24)==-1 then
+   if loop==0 then
+    music(0)
+    loop+=1
+   elseif loop==1 then
+    music(1)
+    loop+=1
+   elseif loop==2 then
+    music(2)
+    loop+=1
+   elseif loop==3 then
+    music(3)
+    loop=0
+    mode=0
+   end
+  end
+ end
+end]]
+
+function _update()
+ --testmode()
+ selecttrack()
+ detecttrack()
+end
+
+function _draw()
+ --clear the screen
+ rectfill (0,0,128,128,0)
+
+ --draw an explanation message
+ print("press left for track 1,\npress right for track 2.", 12, 6, 7)
+ print("press x to stop.")
+
+ --draw the music selection
+ print("\n\ncurrently playing:\n" ..name, 12, 30, 7)
+
+ --debug for test test
+ --print("\nmode = " ..mode)
+end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -33,23 +106,23 @@ __sfx__
 1d1400001d7221d7221d7221d7221d7221d7221d7221d7221d7221d7221d7221d7221d7221d7221d722277222772227722277222772227722277222772229722297222972229722297222972229722297222b722
 331400003b6213662131621296211f6211362100601006010060100601067010570101701007010070100701007010070100701007010070100701007011874118741197411b7411c7411d7411f7412074124741
 __music__
-00 00044243
+01 00044243
 00 00404344
 00 00414344
 00 00414344
 00 00014040
 00 00014244
 00 00010244
-00 00010206
-00 03010204
-00 05010244
+00 00010240
 00 03010244
 00 05010244
+00 03010244
+00 05010206
 00 00010203
 00 00010205
-01 00010203
+00 00010203
 02 00010205
-01 07080f04
+01 07080f44
 00 0c090f44
 00 0d0a0f44
 00 0e0b0f15
