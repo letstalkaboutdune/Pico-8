@@ -26,12 +26,15 @@ sounds bank
 35 - main menu - chimes + kick
 36 - main menu - pulsing noise
 ...
-58 - fx - lost forever in space
-59 - fx - side thrusters
+55 - fx - thrusters 2
+56 - fx - menu beep
+57 - fx - nice landing!
+58 - fx - fail
+59 - fx - thrusters (unused)
 60 - fx - laser
-61 - fx - growl / long explosion
-62 - fx - short swell
-63 - fx - short explosion
+61 - fx - ship crash
+62 - fx - short swell (unused)
+63 - fx - enemy destroyed
 
 patterns bank
 --------------
