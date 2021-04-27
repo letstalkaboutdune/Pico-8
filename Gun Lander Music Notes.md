@@ -1,8 +1,8 @@
 sounds bank
 -----------
-00 - techno kick + bassline A
-01 - techno hat
-02 - techno arp
+00 - gameplay - kick + bassline A
+01 - gameplay - hat
+02 - gameplay - arp
 03 -
 ...
 07 -
