@@ -5,3 +5,5 @@ Ignore
 *.mp3
 *.wav
 carts/celeste.p8
+carts/gunlander.p8
+cdata/uvehj_gun_lander.p8d.txt
