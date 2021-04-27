@@ -3,7 +3,7 @@ sounds bank
 00 - gameplay - kick + bassline A
 01 - gameplay - hat
 02 - gameplay - arp
-03 -
+03 - gameplay - arp_fx
 ...
 07 -
 08 - credits - melody A
@@ -29,7 +29,6 @@ sounds bank
 
 patterns bank
 --------------
-00-07 - gameplay theme
-08-15 -
+00-15 - gameplay theme
 16-23 - credits theme
 24-63 -
