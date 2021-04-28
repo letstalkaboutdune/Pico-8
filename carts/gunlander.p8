@@ -275,7 +275,7 @@ function draw_title()
     print("a game by uvehj",2,110,0)
     print("github.com/uvehj/gun-lander",2,116,0)
     --ian wip
-    print("music/sfx by duneguy :)",2,122,0)
+    print("sounds by duneguy :)",2,122,0)
     if menustate == 1 then
         rectfill(30,86,94,94,8)
         rectfill(31,87,93,93,7)
@@ -296,7 +296,7 @@ function draw_message()
     elseif level.state == 4 then
         print("lost forever in space",24,62,8)
     elseif level.state == -1 then
-        print("nice landing",42,62,8)
+        print("nice landing!",42,62,8)
     end
     if level.state > 0 then --fail states
         print("press \151 to restart",28,72,8)
@@ -355,21 +355,21 @@ function update_menu()
     if menustate == 0 and (btnp(5) or btnp(4)) then
         menustate = 1
         --ian wip
-        sfx(56,3) --play menu beep on ch.2
+        sfx(56,3) --play menu beep on ch.3
     elseif menustate == 1 then
         if (btnp(5) or btnp(4)) then
             menustate = 0
             --ian wip
-            sfx(56,3) --play menu beep on ch.2
+            sfx(56,3) --play menu beep on ch.3
             load_level(menuselectlevel,false)
         elseif btnp(0) and menuselectlevel > 1 then
             menuselectlevel -= 1
             --ian wip
-            sfx(56,3) --play menu beep on ch.2
+            sfx(56,3) --play menu beep on ch.3
         elseif btnp(1) and menuselectlevel < unlocked_levels then
             menuselectlevel += 1
             --ian wip
-            sfx(56,3) --play menu beep on ch.2
+            sfx(56,3) --play menu beep on ch.3
         end
     end
 end
@@ -1023,4 +1023,3 @@ __music__
 02 20232262
 00 60626463
 02 60626463
-
