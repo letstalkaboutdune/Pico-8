@@ -1,31 +1,44 @@
 sounds bank
 -----------
-00 - gameplay - kick + bassline A
-01 - gameplay - hat
-02 - gameplay - arp
-03 - gameplay - arp_fx
+00 - gameplay 2 - kick + bassline A
+01 - gameplay 2 - hat
+02 - gameplay 2 - arp
+03 - gameplay 2 - arp_fx
 ...
 08 - credits - melody A
-09 - credits - melody B
-10 - credits - melody C
+09 - credits - melody B (unused)
+10 - credits - melody C (unused)
 11 - credits - melody D
 12 - credits - bass A
 13 - credits - bass B
 14 - credits - bass C
 15 - credits - bass D
 16 - credits - hat + snare
-17 - credits - octave A
-18 - credits - octave B
-19 - credits - octave C
-20 - credits - octave D
+17 - credits - octave A (unused)
+18 - credits - octave B (unused)
+19 - credits - octave C (unused)
+20 - credits - octave D (unused)
 21 - credits - growl + riser
+22 - credits - harmony A
+23 - credits - harmony B
+24 - credits - harmony C
+25 - credits - harmony D
+26 - credits - melody B2
+27 - credits - melody C2
 ...
 32 - main menu - arp
 33 - main menu - bassline A
 34 - main menu - bassline B
 35 - main menu - chimes + kick
 36 - main menu - pulsing noise
-...
+37 - gameplay 1 - kick + snare
+38 - gameplay 1 - hats
+39 - gameplay 1 - bassline
+40 - gameplay 1 - stinger
+41 - gameplay 1 - synth lead
+42 - gameplay 1 - drum variant
+43 - gameplay 1 - drum variant 2
+
 55 - fx - thrusters 2
 56 - fx - menu beep
 57 - fx - nice landing!
@@ -38,7 +51,9 @@ sounds bank
 
 patterns bank
 --------------
-00-15 - gameplay theme
-16-23 - credits theme
-24-30 - main menu theme
-30-63 - empty
+00-15 - gameplay 2
+16-23 - credits
+24-28 - main menu
+29-31 - empty
+32-49 - gameplay 1
+50   -63 - empty
