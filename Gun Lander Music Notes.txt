@@ -64,3 +64,23 @@ patterns bank
 29-31 - empty
 32-49 - gameplay 1
 50-63 - gameplay 3
+
+track mappings
+--------------
+gameplay 1
+ptn     loops
+----------------
+32      <>
+...     <>
+
+gameplay 2
+ptn     loops
+----------------
+00      <>
+...     <>
+
+gameplay 3
+ptn     loops
+----------------
+50      <>
+...     <>
