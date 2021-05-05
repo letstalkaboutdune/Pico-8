@@ -38,7 +38,14 @@ sounds bank
 41 - gameplay 1 - synth lead
 42 - gameplay 1 - drum variant
 43 - gameplay 1 - drum variant 2
-
+44 - gameplay 3 - kick drum variant 2
+45 - gameplay 3 - kick drum variant 2
+47 - gameplay 3 - bassline 1
+48 - gameplay 3 - bassline 2
+49 - gameplay 3 - arp low
+50 - gameplay 3 - arp high
+51 - gameplay 3 - snare
+...
 55 - fx - thrusters 2
 56 - fx - menu beep
 57 - fx - nice landing!
@@ -56,4 +63,4 @@ patterns bank
 24-28 - main menu
 29-31 - empty
 32-49 - gameplay 1
-50   -63 - empty
+50-63 - gameplay 3
