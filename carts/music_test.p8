@@ -17,7 +17,7 @@ next = false
 stat26 = 0
 
 function updateticks() --checks if pattern is about to end
- if stat(26) >= (ticks-5) then --not working consistently
+ if stat(26) >= (ticks-1) then --not working consistently
   next = true
   stat26 = stat(26)
  end
